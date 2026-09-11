@@ -24,7 +24,7 @@ export default class Hajo {
 
     esemenykezelo(){
         this.buttonElem.addEventListener("click", ()=>{
-            const e = new CustomEvent("leiras", {detail:this.id});
+            const e = new CustomEvent("leiras", {detail:this.#obj.id});
             window.dispatchEvent(e);
             console.log(this.#obj);
         })
