@@ -17,7 +17,7 @@ export default class Hajo {
             <h2>${this.#obj.nev}</h2>
             <p><span>Kapitány neve: ${this.#obj.kapitany}</span></p>
             <p><span>Hajó színe: ${this.#obj.szin}</span></p>
-            <button>Leiras</button>
+            <button>Leírás</button>
         </div>`;
         this.#szuloElem.insertAdjacentHTML("beforeend", SZOVEG);
     }

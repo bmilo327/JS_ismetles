@@ -3,7 +3,7 @@ export const HAJOLISTA=[
         id:11,
         nev:"Titanic",
         szin:"fehér",
-        kapitany:"Leonadro DiCaprio",
+        kapitany:"Leonardo DiCaprio",
         valodi:true,
         leiras:"RIP"
     },

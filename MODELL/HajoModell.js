@@ -2,8 +2,10 @@ import { HAJOLISTA } from "./adatok.js";
 
 export default class HajoModell{
     #lista= [];
+    #kosarLista=[];
     constructor(){
         this.#lista=HAJOLISTA;
+        this.#kosarLista=[];
 
     }
 
@@ -25,7 +27,7 @@ export default class HajoModell{
         const SZURT=this.#lista.filter((a)=>{
             return a.valodi==false;
         });
-        return SZURT
+        return SZURT;
     }
 
     getAdat(id){
@@ -35,6 +37,13 @@ export default class HajoModell{
     }
 
     getKosar(){
+        return this.#kosarLista;
+    }
 
+    kosarbaTesz(id){
+        const adat = this.getAdat(id);
+        if (adat) {
+            this.#kosarLista.push(adat);
+        }
     }
 }
